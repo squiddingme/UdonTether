@@ -1,0 +1,3712 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
+  m_Name: ExampleAnimator
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 09dfc36ccc29a7541bfd3f9862b0c058,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export controller\r\n    .export animator\r\n
+    \   .export inputParam\r\n    .export inputOnParam\r\n    .export lengthParam\r\n
+    \   .export lengthOnParam\r\n    .export heldParam\r\n    .export endPoint\r\n
+    \   .export particles\r\n    .export particleEmission\r\n    .export hitSound\r\n
+    \   .export heldSound\r\n    .export unwindSound\r\n    .export unwindPitchLow\r\n
+    \   .export unwindPitchHigh\r\n\r\n    __refl_const_intnl_udonTypeID: %SystemInt64,
+    null\r\n    __refl_const_intnl_udonTypeName: %SystemString, null\r\n    animator:
+    %UnityEngineAnimator, null\r\n    heldSound: %UnityEngineAudioSource, null\r\n
+    \   hitSound: %UnityEngineAudioSource, null\r\n    unwindSound: %UnityEngineAudioSource,
+    null\r\n    endPoint: %UnityEngineGameObject, null\r\n    particleEmission: %SystemInt32,
+    null\r\n    particles: %UnityEngineParticleSystem, null\r\n    unwindPitchHigh:
+    %SystemSingle, null\r\n    unwindPitchLow: %SystemSingle, null\r\n    heldParam:
+    %SystemString, null\r\n    inputOnParam: %SystemString, null\r\n    inputParam:
+    %SystemString, null\r\n    lengthOnParam: %SystemString, null\r\n    lengthParam:
+    %SystemString, null\r\n    controller: %VRCUdonUdonBehaviour, null\r\n    heldDown:
+    %SystemBoolean, null\r\n    tetheringDown: %SystemBoolean, null\r\n    __0_const_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __1_const_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __0_const_intnl_SystemSingle: %SystemSingle, null\r\n    __0_const_intnl_SystemString:
+    %SystemString, null\r\n    __1_const_intnl_SystemString: %SystemString, null\r\n
+    \   __10_const_intnl_SystemString: %SystemString, null\r\n    __11_const_intnl_SystemString:
+    %SystemString, null\r\n    __12_const_intnl_SystemString: %SystemString, null\r\n
+    \   __13_const_intnl_SystemString: %SystemString, null\r\n    __14_const_intnl_SystemString:
+    %SystemString, null\r\n    __15_const_intnl_SystemString: %SystemString, null\r\n
+    \   __16_const_intnl_SystemString: %SystemString, null\r\n    __17_const_intnl_SystemString:
+    %SystemString, null\r\n    __18_const_intnl_SystemString: %SystemString, null\r\n
+    \   __19_const_intnl_SystemString: %SystemString, null\r\n    __2_const_intnl_SystemString:
+    %SystemString, null\r\n    __20_const_intnl_SystemString: %SystemString, null\r\n
+    \   __21_const_intnl_SystemString: %SystemString, null\r\n    __22_const_intnl_SystemString:
+    %SystemString, null\r\n    __23_const_intnl_SystemString: %SystemString, null\r\n
+    \   __24_const_intnl_SystemString: %SystemString, null\r\n    __25_const_intnl_SystemString:
+    %SystemString, null\r\n    __26_const_intnl_SystemString: %SystemString, null\r\n
+    \   __27_const_intnl_SystemString: %SystemString, null\r\n    __28_const_intnl_SystemString:
+    %SystemString, null\r\n    __29_const_intnl_SystemString: %SystemString, null\r\n
+    \   __3_const_intnl_SystemString: %SystemString, null\r\n    __30_const_intnl_SystemString:
+    %SystemString, null\r\n    __31_const_intnl_SystemString: %SystemString, null\r\n
+    \   __4_const_intnl_SystemString: %SystemString, null\r\n    __5_const_intnl_SystemString:
+    %SystemString, null\r\n    __6_const_intnl_SystemString: %SystemString, null\r\n
+    \   __7_const_intnl_SystemString: %SystemString, null\r\n    __8_const_intnl_SystemString:
+    %SystemString, null\r\n    __9_const_intnl_SystemString: %SystemString, null\r\n
+    \   __0_const_intnl_SystemUInt32: %SystemUInt32, null\r\n    __0_intnl_UnityEngineAudioClip:
+    %UnityEngineAudioClip, null\r\n    __0_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __1_intnl_SystemBoolean: %SystemBoolean, null\r\n    __2_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __3_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __4_intnl_SystemBoolean: %SystemBoolean, null\r\n    __5_intnl_SystemBoolean:
+    %SystemBoolean, null\r\n    __6_intnl_SystemBoolean: %SystemBoolean, null\r\n
+    \   __7_intnl_SystemBoolean: %SystemBoolean, null\r\n    __0_intnl_SystemObject:
+    %SystemObject, null\r\n    __1_intnl_SystemObject: %SystemObject, null\r\n    __2_intnl_SystemObject:
+    %SystemObject, null\r\n    __3_intnl_SystemObject: %SystemObject, null\r\n    __4_intnl_SystemObject:
+    %SystemObject, null\r\n    __5_intnl_SystemObject: %SystemObject, null\r\n    __6_intnl_SystemObject:
+    %SystemObject, null\r\n    __7_intnl_SystemObject: %SystemObject, null\r\n    __8_intnl_SystemObject:
+    %SystemObject, null\r\n    __0_intnl_UnityEngineQuaternion: %UnityEngineQuaternion,
+    null\r\n    __0_intnl_SystemSingle: %SystemSingle, null\r\n    __1_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __2_intnl_SystemSingle: %SystemSingle, null\r\n    __3_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __4_intnl_SystemSingle: %SystemSingle, null\r\n    __5_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __6_intnl_SystemSingle: %SystemSingle, null\r\n    __7_intnl_SystemSingle:
+    %SystemSingle, null\r\n    __0_intnl_SystemString: %SystemString, null\r\n    __1_intnl_SystemString:
+    %SystemString, null\r\n    __2_intnl_SystemString: %SystemString, null\r\n    __3_intnl_SystemString:
+    %SystemString, null\r\n    __4_intnl_SystemString: %SystemString, null\r\n    __0_intnl_UnityEngineTransform:
+    %UnityEngineTransform, null\r\n    __0_intnl_returnTarget_UInt32: %SystemUInt32,
+    null\r\n    __0_intnl_UnityEngineVector3: %UnityEngineVector3, null\r\n    __1_intnl_UnityEngineVector3:
+    %UnityEngineVector3, null\r\n\r\n.data_end\r\n\r\n        \r\n         # using
+    UdonSharp;\r\n        \r\n         # using UnityEngine;\r\n        \r\n         #
+    using VRC.SDKBase;\r\n        \r\n         # using VRC.Udon;\r\n        \r\n         #
+    using Tether;\r\n        \r\n         # namespace Effects\r\n        \r\n         #
+    [RequireComponent(typeof(Animator))]\r\n        \r\n         # public class ExampleAnimator
+    : UdonSharpBehaviour\r\n.code_start\r\n        \r\n         # [Tooltip(\"TetherController
+    to get information from.\")]\r\n        \r\n         # public TetherController
+    controller;\r\n        \r\n         # [Header(\"Animator\")]\r\n        \r\n         #
+    [Tooltip(\"Animator to send parameter values to.\")]\r\n        \r\n         #
+    public Animator animator;\r\n        \r\n         # [Tooltip(\"Name of animator
+    float for displaying value of player input.\")]\r\n        \r\n         # public
+    string inputParam = \"Input\";\r\n        \r\n         # [Tooltip(\"Name of animator
+    boolean to determine if the player is giving input or not.\")]\r\n        \r\n
+    \        # public string inputOnParam = \"InputOn\";\r\n        \r\n         #
+    [Tooltip(\"Name of animator float for displaying length of tether line.\")]\r\n
+    \       \r\n         # public string lengthParam = \"Length\";\r\n        \r\n
+    \        # [Tooltip(\"Name of animator boolean to determine if the line is out
+    or not.\")]\r\n        \r\n         # public string lengthOnParam = \"LengthOn\";\r\n
+    \       \r\n         # [Tooltip(\"Name of animator boolean for displaying if the
+    player is unreeling or not.\")]\r\n        \r\n         # public string heldParam
+    = \"Clamp\";\r\n        \r\n         # [Header(\"End Point Effects\")]\r\n        \r\n
+    \        # [Tooltip(\"End point game object.\")]\r\n        \r\n         # public
+    GameObject endPoint;\r\n        \r\n         # [Tooltip(\"Particle system to play
+    when first tethering.\")]\r\n        \r\n         # public ParticleSystem particles;\r\n
+    \       \r\n         # [Tooltip(\"Number of particles to emit on tether.\")]\r\n
+    \       \r\n         # public int particleEmission = 5;\r\n        \r\n         #
+    [Header(\"Sound Effects\")]\r\n        \r\n         # [Tooltip(\"Audio to play
+    on hit.\")]\r\n        \r\n         # public AudioSource hitSound;\r\n        \r\n
+    \        # [Tooltip(\"Audio to play on held.\")]\r\n        \r\n         # public
+    AudioSource heldSound;\r\n        \r\n         # [Tooltip(\"Audio to play while
+    unwinding.\")]\r\n        \r\n         # public AudioSource unwindSound;\r\n        \r\n
+    \        # [Tooltip(\"Pitch for slowest unwind speed\")]\r\n        \r\n         #
+    public float unwindPitchLow = 0.5f;\r\n        \r\n         # [Tooltip(\"Pitch
+    for fastest unwind speed\")]\r\n        \r\n         # public float unwindPitchHigh
+    = 1.0f;\r\n        \r\n         # private bool tetheringDown = false;\r\n        \r\n
+    \        # private bool heldDown = false;\r\n        \r\n         # public void
+    Update()\r\n    .export _update\r\n        \r\n    _update:\r\n        \r\n        PUSH,
+    __0_const_intnl_SystemUInt32\r\n        \r\n         # {\r\n        \r\n         #
+    animator.SetFloat(inputParam, controller.GetInput());\r\n        PUSH, inputParam\r\n
+    \       PUSH, __0_intnl_SystemString\r\n        COPY # Copy-on-write symbol value
+    dirtied\r\n        PUSH, controller\r\n        PUSH, __18_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __19_const_intnl_SystemString\r\n        PUSH,
+    __0_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __0_intnl_SystemObject\r\n        PUSH, __0_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
+    animator\r\n        PUSH, __0_intnl_SystemString\r\n        PUSH, __0_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineAnimator.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n
+    \       \r\n         # animator.SetBool(inputOnParam, controller.GetInput() >
+    0.0f);\r\n        PUSH, inputOnParam\r\n        PUSH, __1_intnl_SystemString\r\n
+    \       COPY # Copy-on-write symbol value dirtied\r\n        PUSH, controller\r\n
+    \       PUSH, __18_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __19_const_intnl_SystemString\r\n        PUSH,
+    __1_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __1_intnl_SystemObject\r\n        PUSH, __1_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
+    __1_intnl_SystemSingle\r\n        PUSH, __0_const_intnl_SystemSingle\r\n        PUSH,
+    __0_intnl_SystemBoolean\r\n        EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
+    \       PUSH, animator\r\n        PUSH, __1_intnl_SystemString\r\n        PUSH,
+    __0_intnl_SystemBoolean\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n
+    \       \r\n         # animator.SetFloat(lengthParam, controller.GetTetherLength());\r\n
+    \       PUSH, lengthParam\r\n        PUSH, __2_intnl_SystemString\r\n        COPY
+    # Copy-on-write symbol value dirtied\r\n        PUSH, controller\r\n        PUSH,
+    __20_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __21_const_intnl_SystemString\r\n        PUSH,
+    __2_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __2_intnl_SystemObject\r\n        PUSH, __2_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
+    animator\r\n        PUSH, __2_intnl_SystemString\r\n        PUSH, __2_intnl_SystemSingle\r\n
+    \       EXTERN, \"UnityEngineAnimator.__SetFloat__SystemString_SystemSingle__SystemVoid\"\r\n
+    \       \r\n         # animator.SetBool(lengthOnParam, controller.GetTetherLength()
+    > 0.0f);\r\n        PUSH, lengthOnParam\r\n        PUSH, __3_intnl_SystemString\r\n
+    \       COPY # Copy-on-write symbol value dirtied\r\n        PUSH, controller\r\n
+    \       PUSH, __20_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __21_const_intnl_SystemString\r\n        PUSH,
+    __3_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __3_intnl_SystemObject\r\n        PUSH, __3_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
+    __3_intnl_SystemSingle\r\n        PUSH, __0_const_intnl_SystemSingle\r\n        PUSH,
+    __1_intnl_SystemBoolean\r\n        EXTERN, \"SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean\"\r\n
+    \       PUSH, animator\r\n        PUSH, __3_intnl_SystemString\r\n        PUSH,
+    __1_intnl_SystemBoolean\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n
+    \       \r\n         # if (controller.GetTethering())\r\n        PUSH, controller\r\n
+    \       PUSH, __22_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __23_const_intnl_SystemString\r\n        PUSH,
+    __4_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __4_intnl_SystemObject\r\n        PUSH, __2_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemConvert.__ToBoolean__SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __2_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005C4\r\n
+    \       \r\n         # {\r\n        \r\n         # endPoint.transform.SetPositionAndRotation(controller.GetTetherPoint(),
+    Quaternion.LookRotation(controller.GetTetherNormal()));\r\n        PUSH, endPoint\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n
+    \       PUSH, controller\r\n        PUSH, __24_const_intnl_SystemString\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __25_const_intnl_SystemString\r\n        PUSH,
+    __5_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __5_intnl_SystemObject\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
+    \       COPY\r\n        PUSH, controller\r\n        PUSH, __26_const_intnl_SystemString\r\n
+    \       EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __27_const_intnl_SystemString\r\n        PUSH,
+    __6_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __6_intnl_SystemObject\r\n        PUSH, __1_intnl_UnityEngineVector3\r\n
+    \       COPY\r\n        PUSH, __1_intnl_UnityEngineVector3\r\n        PUSH, __0_intnl_UnityEngineQuaternion\r\n
+    \       EXTERN, \"UnityEngineQuaternion.__LookRotation__UnityEngineVector3__UnityEngineQuaternion\"\r\n
+    \       PUSH, __0_intnl_UnityEngineTransform\r\n        PUSH, __0_intnl_UnityEngineVector3\r\n
+    \       PUSH, __0_intnl_UnityEngineQuaternion\r\n        EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n
+    \       \r\n         # if (!tetheringDown)\r\n        PUSH, tetheringDown\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __3_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000424\r\n
+    \       \r\n         # {\r\n        \r\n         # particles.Emit(particleEmission);\r\n
+    \       PUSH, particles\r\n        PUSH, particleEmission\r\n        EXTERN, \"UnityEngineParticleSystem.__Emit__SystemInt32__SystemVoid\"\r\n
+    \       \r\n         # hitSound.PlayOneShot(hitSound.clip);\r\n        PUSH, hitSound\r\n
+    \       PUSH, __0_intnl_UnityEngineAudioClip\r\n        EXTERN, \"UnityEngineAudioSource.__get_clip__UnityEngineAudioClip\"\r\n
+    \       PUSH, hitSound\r\n        PUSH, __0_intnl_UnityEngineAudioClip\r\n        EXTERN,
+    \"UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid\"\r\n
+    \       \r\n         # tetheringDown = true;\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n
+    \       PUSH, tetheringDown\r\n        COPY\r\n        \r\n         # if (!controller.IsInputHeld())\r\n
+    \       PUSH, controller\r\n        PUSH, __28_const_intnl_SystemString\r\n        EXTERN,
+    \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __29_const_intnl_SystemString\r\n        PUSH,
+    __7_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __7_intnl_SystemObject\r\n        PUSH, __4_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemConvert.__ToBoolean__SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        PUSH, __5_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005AC\r\n
+    \       \r\n         # {\r\n        \r\n         # if (!unwindSound.isPlaying)\r\n
+    \       PUSH, unwindSound\r\n        PUSH, __6_intnl_SystemBoolean\r\n        EXTERN,
+    \"UnityEngineAudioSource.__get_isPlaying__SystemBoolean\"\r\n        PUSH, __6_intnl_SystemBoolean\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __7_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x000005A4\r\n
+    \       \r\n         # {\r\n        \r\n         # unwindSound.Play();\r\n        PUSH,
+    unwindSound\r\n        EXTERN, \"UnityEngineAudioSource.__Play__SystemVoid\"\r\n
+    \       \r\n         # unwindSound.pitch = Mathf.Lerp(unwindPitchLow, unwindPitchHigh,
+    controller.GetTetherUnwindRate());\r\n        PUSH, unwindPitchLow\r\n        PUSH,
+    __4_intnl_SystemSingle\r\n        COPY # Copy-on-write symbol value dirtied\r\n
+    \       PUSH, unwindPitchHigh\r\n        PUSH, __5_intnl_SystemSingle\r\n        COPY
+    # Copy-on-write symbol value dirtied\r\n        PUSH, controller\r\n        PUSH,
+    __30_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __31_const_intnl_SystemString\r\n        PUSH,
+    __8_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __8_intnl_SystemObject\r\n        PUSH, __6_intnl_SystemSingle\r\n
+    \       EXTERN, \"SystemConvert.__ToSingle__SystemObject__SystemSingle\"\r\n        PUSH,
+    __4_intnl_SystemSingle\r\n        PUSH, __5_intnl_SystemSingle\r\n        PUSH,
+    __6_intnl_SystemSingle\r\n        PUSH, __7_intnl_SystemSingle\r\n        EXTERN,
+    \"UnityEngineMathf.__Lerp__SystemSingle_SystemSingle_SystemSingle__SystemSingle\"\r\n
+    \       PUSH, unwindSound\r\n        PUSH, __7_intnl_SystemSingle\r\n        EXTERN,
+    \"UnityEngineAudioSource.__set_pitch__SystemSingle__SystemVoid\"\r\n        JUMP,
+    0x000005BC\r\n        \r\n         # else\r\n        \r\n         # {\r\n        \r\n
+    \        # unwindSound.Stop();\r\n        PUSH, unwindSound\r\n        EXTERN,
+    \"UnityEngineAudioSource.__Stop__SystemVoid\"\r\n        JUMP, 0x000005E8\r\n
+    \       \r\n         # else\r\n        \r\n         # {\r\n        \r\n         #
+    tetheringDown = false;\r\n        PUSH, __1_const_intnl_SystemBoolean\r\n        PUSH,
+    tetheringDown\r\n        COPY\r\n        \r\n         # unwindSound.Stop();\r\n
+    \       PUSH, unwindSound\r\n        EXTERN, \"UnityEngineAudioSource.__Stop__SystemVoid\"\r\n
+    \       \r\n         # animator.SetBool(heldParam, controller.IsInputHeld());\r\n
+    \       PUSH, heldParam\r\n        PUSH, __4_intnl_SystemString\r\n        COPY
+    # Copy-on-write symbol value dirtied\r\n        PUSH, controller\r\n        PUSH,
+    __28_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __29_const_intnl_SystemString\r\n        PUSH,
+    __5_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __5_intnl_SystemObject\r\n        PUSH, __3_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemConvert.__ToBoolean__SystemObject__SystemBoolean\"\r\n
+    \       PUSH, animator\r\n        PUSH, __4_intnl_SystemString\r\n        PUSH,
+    __3_intnl_SystemBoolean\r\n        EXTERN, \"UnityEngineAnimator.__SetBool__SystemString_SystemBoolean__SystemVoid\"\r\n
+    \       \r\n         # if (controller.IsInputHeld())\r\n        PUSH, controller\r\n
+    \       PUSH, __28_const_intnl_SystemString\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n
+    \       PUSH, controller\r\n        PUSH, __29_const_intnl_SystemString\r\n        PUSH,
+    __6_intnl_SystemObject\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n
+    \       PUSH, __6_intnl_SystemObject\r\n        PUSH, __4_intnl_SystemBoolean\r\n
+    \       EXTERN, \"SystemConvert.__ToBoolean__SystemObject__SystemBoolean\"\r\n
+    \       PUSH, __4_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000740\r\n
+    \       \r\n         # {\r\n        \r\n         # if (!heldDown)\r\n        PUSH,
+    heldDown\r\n        PUSH, __5_intnl_SystemBoolean\r\n        EXTERN, \"SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean\"\r\n
+    \       PUSH, __5_intnl_SystemBoolean\r\n        JUMP_IF_FALSE, 0x00000738\r\n
+    \       \r\n         # {\r\n        \r\n         # heldSound.PlayOneShot(heldSound.clip);\r\n
+    \       PUSH, heldSound\r\n        PUSH, __0_intnl_UnityEngineAudioClip\r\n        EXTERN,
+    \"UnityEngineAudioSource.__get_clip__UnityEngineAudioClip\"\r\n        PUSH, heldSound\r\n
+    \       PUSH, __0_intnl_UnityEngineAudioClip\r\n        EXTERN, \"UnityEngineAudioSource.__PlayOneShot__UnityEngineAudioClip__SystemVoid\"\r\n
+    \       \r\n         # heldDown = true;\r\n        PUSH, __0_const_intnl_SystemBoolean\r\n
+    \       PUSH, heldDown\r\n        COPY\r\n        JUMP, 0x00000754\r\n        \r\n
+    \        # else\r\n        \r\n         # {\r\n        \r\n         # heldDown
+    = false;\r\n        PUSH, __1_const_intnl_SystemBoolean\r\n        PUSH, heldDown\r\n
+    \       COPY\r\n        PUSH, __0_intnl_returnTarget_UInt32 #Function epilogue\r\n
+    \       COPY\r\n        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32\r\n        \r\n.code_end\r\n"
+  assemblyError: 
+  sourceCsScript: {fileID: 11500000, guid: e1201036ea4fa3641b60093596500c05, type: 3}
+  behaviourIDHeapVarName: __refl_const_intnl_udonTypeID
+  compileErrors: []
+  debugInfo:
+    serializedDebugSpans:
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 0
+      endSourceChar: 2
+      line: 0
+      lineChar: 0
+      spanCodeSection: "\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2
+      endSourceChar: 2
+      line: 1
+      lineChar: 0
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2
+      endSourceChar: 8
+      line: 1
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 8
+      endSourceChar: 20
+      line: 1
+      lineChar: 6
+      spanCodeSection: "UdonSharp;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 20
+      endSourceChar: 26
+      line: 2
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 26
+      endSourceChar: 40
+      line: 2
+      lineChar: 6
+      spanCodeSection: "UnityEngine;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 40
+      endSourceChar: 46
+      line: 3
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 46
+      endSourceChar: 46
+      line: 3
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 46
+      endSourceChar: 50
+      line: 3
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 50
+      endSourceChar: 60
+      line: 3
+      lineChar: 10
+      spanCodeSection: "SDKBase;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 60
+      endSourceChar: 66
+      line: 4
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 66
+      endSourceChar: 66
+      line: 4
+      lineChar: 6
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 66
+      endSourceChar: 70
+      line: 4
+      lineChar: 6
+      spanCodeSection: VRC.
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 70
+      endSourceChar: 77
+      line: 4
+      lineChar: 10
+      spanCodeSection: "Udon;\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 77
+      endSourceChar: 83
+      line: 5
+      lineChar: 0
+      spanCodeSection: 'using '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 83
+      endSourceChar: 94
+      line: 5
+      lineChar: 6
+      spanCodeSection: "Tether;\r\n\r\n"
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 94
+      endSourceChar: 254
+      line: 7
+      lineChar: 0
+      spanCodeSection: "namespace Effects\r\n{\r\n    /// <summary>\r\n    /// Script
+        for the visual representation and sound effects of the example grapple device.\r\n
+        \   /// </summary>\r\n    "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 254
+      endSourceChar: 325
+      line: 12
+      lineChar: 4
+      spanCodeSection: "[RequireComponent(typeof(Animator))]\r\n    public class ExampleAnimator "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 325
+      endSourceChar: 327
+      line: 13
+      lineChar: 33
+      spanCodeSection: ': '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 327
+      endSourceChar: 327
+      line: 13
+      lineChar: 35
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 327
+      endSourceChar: 362
+      line: 13
+      lineChar: 35
+      spanCodeSection: "UdonSharpBehaviour\r\n    {\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 362
+      endSourceChar: 363
+      line: 15
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 363
+      endSourceChar: 363
+      line: 15
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 363
+      endSourceChar: 371
+      line: 15
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 371
+      endSourceChar: 371
+      line: 15
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 371
+      endSourceChar: 433
+      line: 15
+      lineChar: 17
+      spanCodeSection: "\"TetherController to get information from.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 433
+      endSourceChar: 433
+      line: 16
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 433
+      endSourceChar: 473
+      line: 16
+      lineChar: 15
+      spanCodeSection: "TetherController controller;\r\n\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 473
+      endSourceChar: 474
+      line: 18
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 474
+      endSourceChar: 504
+      line: 18
+      lineChar: 9
+      spanCodeSection: "Header(\"Animator\")]\r\n        ["
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 504
+      endSourceChar: 504
+      line: 19
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 504
+      endSourceChar: 512
+      line: 19
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 512
+      endSourceChar: 512
+      line: 19
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 512
+      endSourceChar: 570
+      line: 19
+      lineChar: 17
+      spanCodeSection: "\"Animator to send parameter values to.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 570
+      endSourceChar: 570
+      line: 20
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 570
+      endSourceChar: 598
+      line: 20
+      lineChar: 15
+      spanCodeSection: "Animator animator;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 598
+      endSourceChar: 599
+      line: 21
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 599
+      endSourceChar: 599
+      line: 21
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 599
+      endSourceChar: 607
+      line: 21
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 607
+      endSourceChar: 607
+      line: 21
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 607
+      endSourceChar: 688
+      line: 21
+      lineChar: 17
+      spanCodeSection: "\"Name of animator float for displaying value of player input.\")]\r\n
+        \       public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 688
+      endSourceChar: 688
+      line: 22
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 688
+      endSourceChar: 726
+      line: 22
+      lineChar: 15
+      spanCodeSection: "string inputParam = \"Input\";\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 726
+      endSourceChar: 727
+      line: 23
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 727
+      endSourceChar: 727
+      line: 23
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 727
+      endSourceChar: 735
+      line: 23
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 735
+      endSourceChar: 735
+      line: 23
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 735
+      endSourceChar: 831
+      line: 23
+      lineChar: 17
+      spanCodeSection: "\"Name of animator boolean to determine if the player is giving
+        input or not.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 831
+      endSourceChar: 831
+      line: 24
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 831
+      endSourceChar: 873
+      line: 24
+      lineChar: 15
+      spanCodeSection: "string inputOnParam = \"InputOn\";\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 873
+      endSourceChar: 874
+      line: 25
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 874
+      endSourceChar: 874
+      line: 25
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 874
+      endSourceChar: 882
+      line: 25
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 882
+      endSourceChar: 882
+      line: 25
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 882
+      endSourceChar: 963
+      line: 25
+      lineChar: 17
+      spanCodeSection: "\"Name of animator float for displaying length of tether line.\")]\r\n
+        \       public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 963
+      endSourceChar: 963
+      line: 26
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 963
+      endSourceChar: 1003
+      line: 26
+      lineChar: 15
+      spanCodeSection: "string lengthParam = \"Length\";\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1003
+      endSourceChar: 1004
+      line: 27
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1004
+      endSourceChar: 1004
+      line: 27
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1004
+      endSourceChar: 1012
+      line: 27
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1012
+      endSourceChar: 1012
+      line: 27
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1012
+      endSourceChar: 1097
+      line: 27
+      lineChar: 17
+      spanCodeSection: "\"Name of animator boolean to determine if the line is out
+        or not.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1097
+      endSourceChar: 1097
+      line: 28
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1097
+      endSourceChar: 1141
+      line: 28
+      lineChar: 15
+      spanCodeSection: "string lengthOnParam = \"LengthOn\";\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1141
+      endSourceChar: 1142
+      line: 29
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1142
+      endSourceChar: 1142
+      line: 29
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1142
+      endSourceChar: 1150
+      line: 29
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1150
+      endSourceChar: 1150
+      line: 29
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1150
+      endSourceChar: 1245
+      line: 29
+      lineChar: 17
+      spanCodeSection: "\"Name of animator boolean for displaying if the player is
+        unreeling or not.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1245
+      endSourceChar: 1245
+      line: 30
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1245
+      endSourceChar: 1284
+      line: 30
+      lineChar: 15
+      spanCodeSection: "string heldParam = \"Clamp\";\r\n\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1284
+      endSourceChar: 1285
+      line: 32
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1285
+      endSourceChar: 1324
+      line: 32
+      lineChar: 9
+      spanCodeSection: "Header(\"End Point Effects\")]\r\n        ["
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1324
+      endSourceChar: 1324
+      line: 33
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1324
+      endSourceChar: 1332
+      line: 33
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1332
+      endSourceChar: 1332
+      line: 33
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1332
+      endSourceChar: 1375
+      line: 33
+      lineChar: 17
+      spanCodeSection: "\"End point game object.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1375
+      endSourceChar: 1375
+      line: 34
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1375
+      endSourceChar: 1405
+      line: 34
+      lineChar: 15
+      spanCodeSection: "GameObject endPoint;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1405
+      endSourceChar: 1406
+      line: 35
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1406
+      endSourceChar: 1406
+      line: 35
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1406
+      endSourceChar: 1414
+      line: 35
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1414
+      endSourceChar: 1414
+      line: 35
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1414
+      endSourceChar: 1480
+      line: 35
+      lineChar: 17
+      spanCodeSection: "\"Particle system to play when first tethering.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1480
+      endSourceChar: 1480
+      line: 36
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1480
+      endSourceChar: 1515
+      line: 36
+      lineChar: 15
+      spanCodeSection: "ParticleSystem particles;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1515
+      endSourceChar: 1516
+      line: 37
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1516
+      endSourceChar: 1516
+      line: 37
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1516
+      endSourceChar: 1524
+      line: 37
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1524
+      endSourceChar: 1524
+      line: 37
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1524
+      endSourceChar: 1583
+      line: 37
+      lineChar: 17
+      spanCodeSection: "\"Number of particles to emit on tether.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1583
+      endSourceChar: 1583
+      line: 38
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1583
+      endSourceChar: 1620
+      line: 38
+      lineChar: 15
+      spanCodeSection: "int particleEmission = 5;\r\n\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1620
+      endSourceChar: 1621
+      line: 40
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1621
+      endSourceChar: 1656
+      line: 40
+      lineChar: 9
+      spanCodeSection: "Header(\"Sound Effects\")]\r\n        ["
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1656
+      endSourceChar: 1656
+      line: 41
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1656
+      endSourceChar: 1664
+      line: 41
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1664
+      endSourceChar: 1664
+      line: 41
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1664
+      endSourceChar: 1706
+      line: 41
+      lineChar: 17
+      spanCodeSection: "\"Audio to play on hit.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1706
+      endSourceChar: 1706
+      line: 42
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1706
+      endSourceChar: 1737
+      line: 42
+      lineChar: 15
+      spanCodeSection: "AudioSource hitSound;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1737
+      endSourceChar: 1738
+      line: 43
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1738
+      endSourceChar: 1738
+      line: 43
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1738
+      endSourceChar: 1746
+      line: 43
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1746
+      endSourceChar: 1746
+      line: 43
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1746
+      endSourceChar: 1789
+      line: 43
+      lineChar: 17
+      spanCodeSection: "\"Audio to play on held.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1789
+      endSourceChar: 1789
+      line: 44
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1789
+      endSourceChar: 1821
+      line: 44
+      lineChar: 15
+      spanCodeSection: "AudioSource heldSound;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1821
+      endSourceChar: 1822
+      line: 45
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1822
+      endSourceChar: 1822
+      line: 45
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1822
+      endSourceChar: 1830
+      line: 45
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1830
+      endSourceChar: 1830
+      line: 45
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1830
+      endSourceChar: 1881
+      line: 45
+      lineChar: 17
+      spanCodeSection: "\"Audio to play while unwinding.\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1881
+      endSourceChar: 1881
+      line: 46
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1881
+      endSourceChar: 1915
+      line: 46
+      lineChar: 15
+      spanCodeSection: "AudioSource unwindSound;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1915
+      endSourceChar: 1916
+      line: 47
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1916
+      endSourceChar: 1916
+      line: 47
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1916
+      endSourceChar: 1924
+      line: 47
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1924
+      endSourceChar: 1924
+      line: 47
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1924
+      endSourceChar: 1975
+      line: 47
+      lineChar: 17
+      spanCodeSection: "\"Pitch for slowest unwind speed\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1975
+      endSourceChar: 1975
+      line: 48
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 1975
+      endSourceChar: 2013
+      line: 48
+      lineChar: 15
+      spanCodeSection: "float unwindPitchLow = 0.5f;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2013
+      endSourceChar: 2014
+      line: 49
+      lineChar: 8
+      spanCodeSection: '['
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2014
+      endSourceChar: 2014
+      line: 49
+      lineChar: 9
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2014
+      endSourceChar: 2022
+      line: 49
+      lineChar: 9
+      spanCodeSection: Tooltip(
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2022
+      endSourceChar: 2022
+      line: 49
+      lineChar: 17
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2022
+      endSourceChar: 2073
+      line: 49
+      lineChar: 17
+      spanCodeSection: "\"Pitch for fastest unwind speed\")]\r\n        public "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2073
+      endSourceChar: 2073
+      line: 50
+      lineChar: 15
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2073
+      endSourceChar: 2114
+      line: 50
+      lineChar: 15
+      spanCodeSection: "float unwindPitchHigh = 1.0f;\r\n\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2114
+      endSourceChar: 2122
+      line: 52
+      lineChar: 8
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2122
+      endSourceChar: 2122
+      line: 52
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2122
+      endSourceChar: 2159
+      line: 52
+      lineChar: 16
+      spanCodeSection: "bool tetheringDown = false;\r\n        "
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2159
+      endSourceChar: 2167
+      line: 53
+      lineChar: 8
+      spanCodeSection: 'private '
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2167
+      endSourceChar: 2167
+      line: 53
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 0
+      endInstruction: -1
+      startSourceChar: 2167
+      endSourceChar: 2201
+      line: 53
+      lineChar: 16
+      spanCodeSection: "bool heldDown = false;\r\n\r\n        "
+    - startInstruction: 0
+      endInstruction: 7
+      startSourceChar: 2201
+      endSourceChar: 2231
+      line: 55
+      lineChar: 8
+      spanCodeSection: "public void Update()\r\n        "
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2231
+      endSourceChar: 2246
+      line: 56
+      lineChar: 8
+      spanCodeSection: "{\r\n            "
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2246
+      endSourceChar: 2246
+      line: 57
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2246
+      endSourceChar: 2246
+      line: 57
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2246
+      endSourceChar: 2246
+      line: 57
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2246
+      endSourceChar: 2255
+      line: 57
+      lineChar: 12
+      spanCodeSection: animator.
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2255
+      endSourceChar: 2264
+      line: 57
+      lineChar: 21
+      spanCodeSection: SetFloat(
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2264
+      endSourceChar: 2276
+      line: 57
+      lineChar: 30
+      spanCodeSection: 'inputParam, '
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2276
+      endSourceChar: 2276
+      line: 57
+      lineChar: 42
+      spanCodeSection: 
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2276
+      endSourceChar: 2276
+      line: 57
+      lineChar: 42
+      spanCodeSection: 
+    - startInstruction: 8
+      endInstruction: 7
+      startSourceChar: 2276
+      endSourceChar: 2287
+      line: 57
+      lineChar: 42
+      spanCodeSection: controller.
+    - startInstruction: 8
+      endInstruction: 139
+      startSourceChar: 2287
+      endSourceChar: 2313
+      line: 57
+      lineChar: 53
+      spanCodeSection: "GetInput());\r\n            "
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2313
+      endSourceChar: 2313
+      line: 58
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2313
+      endSourceChar: 2313
+      line: 58
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2313
+      endSourceChar: 2313
+      line: 58
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2313
+      endSourceChar: 2322
+      line: 58
+      lineChar: 12
+      spanCodeSection: animator.
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2322
+      endSourceChar: 2330
+      line: 58
+      lineChar: 21
+      spanCodeSection: SetBool(
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2330
+      endSourceChar: 2344
+      line: 58
+      lineChar: 29
+      spanCodeSection: 'inputOnParam, '
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2344
+      endSourceChar: 2344
+      line: 58
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2344
+      endSourceChar: 2344
+      line: 58
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2344
+      endSourceChar: 2344
+      line: 58
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 140
+      endInstruction: 139
+      startSourceChar: 2344
+      endSourceChar: 2355
+      line: 58
+      lineChar: 43
+      spanCodeSection: controller.
+    - startInstruction: 140
+      endInstruction: 239
+      startSourceChar: 2355
+      endSourceChar: 2368
+      line: 58
+      lineChar: 54
+      spanCodeSection: 'GetInput() > '
+    - startInstruction: 240
+      endInstruction: 303
+      startSourceChar: 2368
+      endSourceChar: 2390
+      line: 58
+      lineChar: 67
+      spanCodeSection: "0.0f);\r\n\r\n            "
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2390
+      endSourceChar: 2390
+      line: 60
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2390
+      endSourceChar: 2390
+      line: 60
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2390
+      endSourceChar: 2390
+      line: 60
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2390
+      endSourceChar: 2399
+      line: 60
+      lineChar: 12
+      spanCodeSection: animator.
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2399
+      endSourceChar: 2408
+      line: 60
+      lineChar: 21
+      spanCodeSection: SetFloat(
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2408
+      endSourceChar: 2421
+      line: 60
+      lineChar: 30
+      spanCodeSection: 'lengthParam, '
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2421
+      endSourceChar: 2421
+      line: 60
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2421
+      endSourceChar: 2421
+      line: 60
+      lineChar: 43
+      spanCodeSection: 
+    - startInstruction: 304
+      endInstruction: 303
+      startSourceChar: 2421
+      endSourceChar: 2432
+      line: 60
+      lineChar: 43
+      spanCodeSection: controller.
+    - startInstruction: 304
+      endInstruction: 435
+      startSourceChar: 2432
+      endSourceChar: 2465
+      line: 60
+      lineChar: 54
+      spanCodeSection: "GetTetherLength());\r\n            "
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2465
+      endSourceChar: 2465
+      line: 61
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2465
+      endSourceChar: 2465
+      line: 61
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2465
+      endSourceChar: 2465
+      line: 61
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2465
+      endSourceChar: 2474
+      line: 61
+      lineChar: 12
+      spanCodeSection: animator.
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2474
+      endSourceChar: 2482
+      line: 61
+      lineChar: 21
+      spanCodeSection: SetBool(
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2482
+      endSourceChar: 2497
+      line: 61
+      lineChar: 29
+      spanCodeSection: 'lengthOnParam, '
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2497
+      endSourceChar: 2497
+      line: 61
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2497
+      endSourceChar: 2497
+      line: 61
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2497
+      endSourceChar: 2497
+      line: 61
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 436
+      endInstruction: 435
+      startSourceChar: 2497
+      endSourceChar: 2508
+      line: 61
+      lineChar: 44
+      spanCodeSection: controller.
+    - startInstruction: 436
+      endInstruction: 535
+      startSourceChar: 2508
+      endSourceChar: 2528
+      line: 61
+      lineChar: 55
+      spanCodeSection: 'GetTetherLength() > '
+    - startInstruction: 536
+      endInstruction: 599
+      startSourceChar: 2528
+      endSourceChar: 2550
+      line: 61
+      lineChar: 75
+      spanCodeSection: "0.0f);\r\n\r\n            "
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 2550
+      endSourceChar: 2554
+      line: 63
+      lineChar: 12
+      spanCodeSection: if (
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 2554
+      endSourceChar: 2554
+      line: 63
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 2554
+      endSourceChar: 2554
+      line: 63
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 600
+      endInstruction: 599
+      startSourceChar: 2554
+      endSourceChar: 2565
+      line: 63
+      lineChar: 16
+      spanCodeSection: controller.
+    - startInstruction: 600
+      endInstruction: 695
+      startSourceChar: 2565
+      endSourceChar: 2594
+      line: 63
+      lineChar: 27
+      spanCodeSection: "GetTethering())\r\n            "
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2594
+      endSourceChar: 2613
+      line: 64
+      lineChar: 12
+      spanCodeSection: "{\r\n                "
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2613
+      endSourceChar: 2613
+      line: 65
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2613
+      endSourceChar: 2613
+      line: 65
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2613
+      endSourceChar: 2613
+      line: 65
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2613
+      endSourceChar: 2613
+      line: 65
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2613
+      endSourceChar: 2622
+      line: 65
+      lineChar: 16
+      spanCodeSection: endPoint.
+    - startInstruction: 696
+      endInstruction: 695
+      startSourceChar: 2622
+      endSourceChar: 2632
+      line: 65
+      lineChar: 25
+      spanCodeSection: transform.
+    - startInstruction: 696
+      endInstruction: 719
+      startSourceChar: 2632
+      endSourceChar: 2655
+      line: 65
+      lineChar: 35
+      spanCodeSection: SetPositionAndRotation(
+    - startInstruction: 720
+      endInstruction: 719
+      startSourceChar: 2655
+      endSourceChar: 2655
+      line: 65
+      lineChar: 58
+      spanCodeSection: 
+    - startInstruction: 720
+      endInstruction: 719
+      startSourceChar: 2655
+      endSourceChar: 2655
+      line: 65
+      lineChar: 58
+      spanCodeSection: 
+    - startInstruction: 720
+      endInstruction: 719
+      startSourceChar: 2655
+      endSourceChar: 2666
+      line: 65
+      lineChar: 58
+      spanCodeSection: controller.
+    - startInstruction: 720
+      endInstruction: 795
+      startSourceChar: 2666
+      endSourceChar: 2684
+      line: 65
+      lineChar: 69
+      spanCodeSection: 'GetTetherPoint(), '
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2684
+      endSourceChar: 2684
+      line: 65
+      lineChar: 87
+      spanCodeSection: 
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2684
+      endSourceChar: 2684
+      line: 65
+      lineChar: 87
+      spanCodeSection: 
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2684
+      endSourceChar: 2695
+      line: 65
+      lineChar: 87
+      spanCodeSection: Quaternion.
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2695
+      endSourceChar: 2708
+      line: 65
+      lineChar: 98
+      spanCodeSection: LookRotation(
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2708
+      endSourceChar: 2708
+      line: 65
+      lineChar: 111
+      spanCodeSection: 
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2708
+      endSourceChar: 2708
+      line: 65
+      lineChar: 111
+      spanCodeSection: 
+    - startInstruction: 796
+      endInstruction: 795
+      startSourceChar: 2708
+      endSourceChar: 2719
+      line: 65
+      lineChar: 111
+      spanCodeSection: controller.
+    - startInstruction: 796
+      endInstruction: 927
+      startSourceChar: 2719
+      endSourceChar: 2759
+      line: 65
+      lineChar: 122
+      spanCodeSection: "GetTetherNormal()));\r\n\r\n                "
+    - startInstruction: 928
+      endInstruction: 927
+      startSourceChar: 2759
+      endSourceChar: 2763
+      line: 67
+      lineChar: 16
+      spanCodeSection: if (
+    - startInstruction: 928
+      endInstruction: 927
+      startSourceChar: 2763
+      endSourceChar: 2764
+      line: 67
+      lineChar: 20
+      spanCodeSection: '!'
+    - startInstruction: 928
+      endInstruction: 967
+      startSourceChar: 2764
+      endSourceChar: 2796
+      line: 67
+      lineChar: 21
+      spanCodeSection: "tetheringDown)\r\n                "
+    - startInstruction: 968
+      endInstruction: 967
+      startSourceChar: 2796
+      endSourceChar: 2819
+      line: 68
+      lineChar: 16
+      spanCodeSection: "{\r\n                    "
+    - startInstruction: 968
+      endInstruction: 967
+      startSourceChar: 2819
+      endSourceChar: 2819
+      line: 69
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 968
+      endInstruction: 967
+      startSourceChar: 2819
+      endSourceChar: 2819
+      line: 69
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 968
+      endInstruction: 967
+      startSourceChar: 2819
+      endSourceChar: 2819
+      line: 69
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 968
+      endInstruction: 967
+      startSourceChar: 2819
+      endSourceChar: 2829
+      line: 69
+      lineChar: 20
+      spanCodeSection: particles.
+    - startInstruction: 968
+      endInstruction: 967
+      startSourceChar: 2829
+      endSourceChar: 2834
+      line: 69
+      lineChar: 30
+      spanCodeSection: Emit(
+    - startInstruction: 968
+      endInstruction: 991
+      startSourceChar: 2834
+      endSourceChar: 2874
+      line: 69
+      lineChar: 35
+      spanCodeSection: "particleEmission);\r\n                    "
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2874
+      endSourceChar: 2874
+      line: 70
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2874
+      endSourceChar: 2874
+      line: 70
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2874
+      endSourceChar: 2874
+      line: 70
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2874
+      endSourceChar: 2883
+      line: 70
+      lineChar: 20
+      spanCodeSection: hitSound.
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2883
+      endSourceChar: 2895
+      line: 70
+      lineChar: 29
+      spanCodeSection: PlayOneShot(
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2895
+      endSourceChar: 2895
+      line: 70
+      lineChar: 41
+      spanCodeSection: 
+    - startInstruction: 992
+      endInstruction: 991
+      startSourceChar: 2895
+      endSourceChar: 2904
+      line: 70
+      lineChar: 41
+      spanCodeSection: hitSound.
+    - startInstruction: 992
+      endInstruction: 1039
+      startSourceChar: 2904
+      endSourceChar: 2932
+      line: 70
+      lineChar: 50
+      spanCodeSection: "clip);\r\n                    "
+    - startInstruction: 1040
+      endInstruction: 1039
+      startSourceChar: 2932
+      endSourceChar: 2932
+      line: 71
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1040
+      endInstruction: 1039
+      startSourceChar: 2932
+      endSourceChar: 2932
+      line: 71
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1040
+      endInstruction: 1039
+      startSourceChar: 2932
+      endSourceChar: 2948
+      line: 71
+      lineChar: 20
+      spanCodeSection: 'tetheringDown = '
+    - startInstruction: 1040
+      endInstruction: 1059
+      startSourceChar: 2948
+      endSourceChar: 2992
+      line: 71
+      lineChar: 36
+      spanCodeSection: "true;\r\n                }\r\n\r\n                "
+    - startInstruction: 1060
+      endInstruction: 1059
+      startSourceChar: 2992
+      endSourceChar: 2996
+      line: 74
+      lineChar: 16
+      spanCodeSection: if (
+    - startInstruction: 1060
+      endInstruction: 1059
+      startSourceChar: 2996
+      endSourceChar: 2997
+      line: 74
+      lineChar: 20
+      spanCodeSection: '!'
+    - startInstruction: 1060
+      endInstruction: 1059
+      startSourceChar: 2997
+      endSourceChar: 2997
+      line: 74
+      lineChar: 21
+      spanCodeSection: 
+    - startInstruction: 1060
+      endInstruction: 1059
+      startSourceChar: 2997
+      endSourceChar: 2997
+      line: 74
+      lineChar: 21
+      spanCodeSection: 
+    - startInstruction: 1060
+      endInstruction: 1059
+      startSourceChar: 2997
+      endSourceChar: 3008
+      line: 74
+      lineChar: 21
+      spanCodeSection: controller.
+    - startInstruction: 1060
+      endInstruction: 1179
+      startSourceChar: 3008
+      endSourceChar: 3040
+      line: 74
+      lineChar: 32
+      spanCodeSection: "IsInputHeld())\r\n                "
+    - startInstruction: 1180
+      endInstruction: 1179
+      startSourceChar: 3040
+      endSourceChar: 3063
+      line: 75
+      lineChar: 16
+      spanCodeSection: "{\r\n                    "
+    - startInstruction: 1180
+      endInstruction: 1179
+      startSourceChar: 3063
+      endSourceChar: 3067
+      line: 76
+      lineChar: 20
+      spanCodeSection: if (
+    - startInstruction: 1180
+      endInstruction: 1179
+      startSourceChar: 3067
+      endSourceChar: 3068
+      line: 76
+      lineChar: 24
+      spanCodeSection: '!'
+    - startInstruction: 1180
+      endInstruction: 1179
+      startSourceChar: 3068
+      endSourceChar: 3068
+      line: 76
+      lineChar: 25
+      spanCodeSection: 
+    - startInstruction: 1180
+      endInstruction: 1179
+      startSourceChar: 3068
+      endSourceChar: 3080
+      line: 76
+      lineChar: 25
+      spanCodeSection: unwindSound.
+    - startInstruction: 1180
+      endInstruction: 1243
+      startSourceChar: 3080
+      endSourceChar: 3112
+      line: 76
+      lineChar: 37
+      spanCodeSection: "isPlaying)\r\n                    "
+    - startInstruction: 1244
+      endInstruction: 1243
+      startSourceChar: 3112
+      endSourceChar: 3139
+      line: 77
+      lineChar: 20
+      spanCodeSection: "{\r\n                        "
+    - startInstruction: 1244
+      endInstruction: 1243
+      startSourceChar: 3139
+      endSourceChar: 3139
+      line: 78
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1244
+      endInstruction: 1243
+      startSourceChar: 3139
+      endSourceChar: 3139
+      line: 78
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1244
+      endInstruction: 1243
+      startSourceChar: 3139
+      endSourceChar: 3139
+      line: 78
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1244
+      endInstruction: 1243
+      startSourceChar: 3139
+      endSourceChar: 3151
+      line: 78
+      lineChar: 24
+      spanCodeSection: unwindSound.
+    - startInstruction: 1244
+      endInstruction: 1259
+      startSourceChar: 3151
+      endSourceChar: 3184
+      line: 78
+      lineChar: 36
+      spanCodeSection: "Play();\r\n                        "
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3184
+      endSourceChar: 3184
+      line: 79
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3184
+      endSourceChar: 3184
+      line: 79
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3184
+      endSourceChar: 3184
+      line: 79
+      lineChar: 24
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3184
+      endSourceChar: 3196
+      line: 79
+      lineChar: 24
+      spanCodeSection: unwindSound.
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3196
+      endSourceChar: 3204
+      line: 79
+      lineChar: 36
+      spanCodeSection: 'pitch = '
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3204
+      endSourceChar: 3204
+      line: 79
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3204
+      endSourceChar: 3204
+      line: 79
+      lineChar: 44
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3204
+      endSourceChar: 3210
+      line: 79
+      lineChar: 44
+      spanCodeSection: Mathf.
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3210
+      endSourceChar: 3215
+      line: 79
+      lineChar: 50
+      spanCodeSection: Lerp(
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3215
+      endSourceChar: 3231
+      line: 79
+      lineChar: 55
+      spanCodeSection: 'unwindPitchLow, '
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3231
+      endSourceChar: 3248
+      line: 79
+      lineChar: 71
+      spanCodeSection: 'unwindPitchHigh, '
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3248
+      endSourceChar: 3248
+      line: 79
+      lineChar: 88
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3248
+      endSourceChar: 3248
+      line: 79
+      lineChar: 88
+      spanCodeSection: 
+    - startInstruction: 1260
+      endInstruction: 1259
+      startSourceChar: 3248
+      endSourceChar: 3259
+      line: 79
+      lineChar: 88
+      spanCodeSection: controller.
+    - startInstruction: 1260
+      endInstruction: 1451
+      startSourceChar: 3259
+      endSourceChar: 3342
+      line: 79
+      lineChar: 99
+      spanCodeSection: "GetTetherUnwindRate());\r\n                    }\r\n                }\r\n
+        \               "
+    - startInstruction: 1452
+      endInstruction: 1451
+      startSourceChar: 3342
+      endSourceChar: 3364
+      line: 82
+      lineChar: 16
+      spanCodeSection: "else\r\n                "
+    - startInstruction: 1452
+      endInstruction: 1451
+      startSourceChar: 3364
+      endSourceChar: 3387
+      line: 83
+      lineChar: 16
+      spanCodeSection: "{\r\n                    "
+    - startInstruction: 1452
+      endInstruction: 1451
+      startSourceChar: 3387
+      endSourceChar: 3387
+      line: 84
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1452
+      endInstruction: 1451
+      startSourceChar: 3387
+      endSourceChar: 3387
+      line: 84
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1452
+      endInstruction: 1451
+      startSourceChar: 3387
+      endSourceChar: 3387
+      line: 84
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1452
+      endInstruction: 1451
+      startSourceChar: 3387
+      endSourceChar: 3399
+      line: 84
+      lineChar: 20
+      spanCodeSection: unwindSound.
+    - startInstruction: 1452
+      endInstruction: 1475
+      startSourceChar: 3399
+      endSourceChar: 3454
+      line: 84
+      lineChar: 32
+      spanCodeSection: "Stop();\r\n                }\r\n            }\r\n            "
+    - startInstruction: 1476
+      endInstruction: 1475
+      startSourceChar: 3454
+      endSourceChar: 3472
+      line: 87
+      lineChar: 12
+      spanCodeSection: "else\r\n            "
+    - startInstruction: 1476
+      endInstruction: 1475
+      startSourceChar: 3472
+      endSourceChar: 3491
+      line: 88
+      lineChar: 12
+      spanCodeSection: "{\r\n                "
+    - startInstruction: 1476
+      endInstruction: 1475
+      startSourceChar: 3491
+      endSourceChar: 3491
+      line: 89
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1476
+      endInstruction: 1475
+      startSourceChar: 3491
+      endSourceChar: 3491
+      line: 89
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1476
+      endInstruction: 1475
+      startSourceChar: 3491
+      endSourceChar: 3507
+      line: 89
+      lineChar: 16
+      spanCodeSection: 'tetheringDown = '
+    - startInstruction: 1476
+      endInstruction: 1495
+      startSourceChar: 3507
+      endSourceChar: 3531
+      line: 89
+      lineChar: 32
+      spanCodeSection: "false;\r\n                "
+    - startInstruction: 1496
+      endInstruction: 1495
+      startSourceChar: 3531
+      endSourceChar: 3531
+      line: 90
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1496
+      endInstruction: 1495
+      startSourceChar: 3531
+      endSourceChar: 3531
+      line: 90
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1496
+      endInstruction: 1495
+      startSourceChar: 3531
+      endSourceChar: 3531
+      line: 90
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1496
+      endInstruction: 1495
+      startSourceChar: 3531
+      endSourceChar: 3543
+      line: 90
+      lineChar: 16
+      spanCodeSection: unwindSound.
+    - startInstruction: 1496
+      endInstruction: 1511
+      startSourceChar: 3543
+      endSourceChar: 3581
+      line: 90
+      lineChar: 28
+      spanCodeSection: "Stop();\r\n            }\r\n\r\n            "
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3581
+      endSourceChar: 3581
+      line: 93
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3581
+      endSourceChar: 3581
+      line: 93
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3581
+      endSourceChar: 3581
+      line: 93
+      lineChar: 12
+      spanCodeSection: 
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3581
+      endSourceChar: 3590
+      line: 93
+      lineChar: 12
+      spanCodeSection: animator.
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3590
+      endSourceChar: 3598
+      line: 93
+      lineChar: 21
+      spanCodeSection: SetBool(
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3598
+      endSourceChar: 3609
+      line: 93
+      lineChar: 29
+      spanCodeSection: 'heldParam, '
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3609
+      endSourceChar: 3609
+      line: 93
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3609
+      endSourceChar: 3609
+      line: 93
+      lineChar: 40
+      spanCodeSection: 
+    - startInstruction: 1512
+      endInstruction: 1511
+      startSourceChar: 3609
+      endSourceChar: 3620
+      line: 93
+      lineChar: 40
+      spanCodeSection: controller.
+    - startInstruction: 1512
+      endInstruction: 1643
+      startSourceChar: 3620
+      endSourceChar: 3651
+      line: 93
+      lineChar: 51
+      spanCodeSection: "IsInputHeld());\r\n\r\n            "
+    - startInstruction: 1644
+      endInstruction: 1643
+      startSourceChar: 3651
+      endSourceChar: 3655
+      line: 95
+      lineChar: 12
+      spanCodeSection: if (
+    - startInstruction: 1644
+      endInstruction: 1643
+      startSourceChar: 3655
+      endSourceChar: 3655
+      line: 95
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1644
+      endInstruction: 1643
+      startSourceChar: 3655
+      endSourceChar: 3655
+      line: 95
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1644
+      endInstruction: 1643
+      startSourceChar: 3655
+      endSourceChar: 3666
+      line: 95
+      lineChar: 16
+      spanCodeSection: controller.
+    - startInstruction: 1644
+      endInstruction: 1739
+      startSourceChar: 3666
+      endSourceChar: 3694
+      line: 95
+      lineChar: 27
+      spanCodeSection: "IsInputHeld())\r\n            "
+    - startInstruction: 1740
+      endInstruction: 1739
+      startSourceChar: 3694
+      endSourceChar: 3713
+      line: 96
+      lineChar: 12
+      spanCodeSection: "{\r\n                "
+    - startInstruction: 1740
+      endInstruction: 1739
+      startSourceChar: 3713
+      endSourceChar: 3717
+      line: 97
+      lineChar: 16
+      spanCodeSection: if (
+    - startInstruction: 1740
+      endInstruction: 1739
+      startSourceChar: 3717
+      endSourceChar: 3718
+      line: 97
+      lineChar: 20
+      spanCodeSection: '!'
+    - startInstruction: 1740
+      endInstruction: 1779
+      startSourceChar: 3718
+      endSourceChar: 3745
+      line: 97
+      lineChar: 21
+      spanCodeSection: "heldDown)\r\n                "
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3745
+      endSourceChar: 3768
+      line: 98
+      lineChar: 16
+      spanCodeSection: "{\r\n                    "
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3768
+      endSourceChar: 3768
+      line: 99
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3768
+      endSourceChar: 3768
+      line: 99
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3768
+      endSourceChar: 3768
+      line: 99
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3768
+      endSourceChar: 3778
+      line: 99
+      lineChar: 20
+      spanCodeSection: heldSound.
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3778
+      endSourceChar: 3790
+      line: 99
+      lineChar: 30
+      spanCodeSection: PlayOneShot(
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3790
+      endSourceChar: 3790
+      line: 99
+      lineChar: 42
+      spanCodeSection: 
+    - startInstruction: 1780
+      endInstruction: 1779
+      startSourceChar: 3790
+      endSourceChar: 3800
+      line: 99
+      lineChar: 42
+      spanCodeSection: heldSound.
+    - startInstruction: 1780
+      endInstruction: 1827
+      startSourceChar: 3800
+      endSourceChar: 3828
+      line: 99
+      lineChar: 52
+      spanCodeSection: "clip);\r\n                    "
+    - startInstruction: 1828
+      endInstruction: 1827
+      startSourceChar: 3828
+      endSourceChar: 3828
+      line: 100
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1828
+      endInstruction: 1827
+      startSourceChar: 3828
+      endSourceChar: 3828
+      line: 100
+      lineChar: 20
+      spanCodeSection: 
+    - startInstruction: 1828
+      endInstruction: 1827
+      startSourceChar: 3828
+      endSourceChar: 3839
+      line: 100
+      lineChar: 20
+      spanCodeSection: 'heldDown = '
+    - startInstruction: 1828
+      endInstruction: 1855
+      startSourceChar: 3839
+      endSourceChar: 3892
+      line: 100
+      lineChar: 31
+      spanCodeSection: "true;\r\n                }\r\n            }\r\n            "
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 3892
+      endSourceChar: 3910
+      line: 103
+      lineChar: 12
+      spanCodeSection: "else\r\n            "
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 3910
+      endSourceChar: 3929
+      line: 104
+      lineChar: 12
+      spanCodeSection: "{\r\n                "
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 3929
+      endSourceChar: 3929
+      line: 105
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 3929
+      endSourceChar: 3929
+      line: 105
+      lineChar: 16
+      spanCodeSection: 
+    - startInstruction: 1856
+      endInstruction: 1855
+      startSourceChar: 3929
+      endSourceChar: 3940
+      line: 105
+      lineChar: 16
+      spanCodeSection: 'heldDown = '
+    - startInstruction: 1856
+      endInstruction: 1856
+      startSourceChar: 3940
+      endSourceChar: 3940
+      line: 105
+      lineChar: 27
+      spanCodeSection: 
+  hasInteractEvent: 0
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11500000, guid: 0fcceb2a1a4552c45ba044d9061cc57e, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: fieldDefinitions
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UdonSharp.FieldDefinition,
+        UdonSharp.Editor]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 17
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: controller
+    - Name: $v
+      Entry: 7
+      Data: 2|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 3|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: Tether.TetherController, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: VRCUdonUdonBehaviour
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: controller
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: controller
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 6|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: TetherController to get information from.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: animator
+    - Name: $v
+      Entry: 7
+      Data: 7|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 8|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.Animator, UnityEngine.AnimationModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineAnimator
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: animator
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: animator
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 11|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+    - Name: header
+      Entry: 1
+      Data: Animator
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 12|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Animator to send parameter values to.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: inputParam
+    - Name: $v
+      Entry: 7
+      Data: 13|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 14|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 15|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.String, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemString
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: inputParam
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: inputParam
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 17|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Name of animator float for displaying value of player input.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: inputOnParam
+    - Name: $v
+      Entry: 7
+      Data: 18|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 19|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 15
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemString
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: inputOnParam
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: inputOnParam
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 21|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Name of animator boolean to determine if the player is giving input or
+        not.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: lengthParam
+    - Name: $v
+      Entry: 7
+      Data: 22|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 23|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 15
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemString
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: lengthParam
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: lengthParam
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 25|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Name of animator float for displaying length of tether line.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: lengthOnParam
+    - Name: $v
+      Entry: 7
+      Data: 26|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 27|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 15
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemString
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: lengthOnParam
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: lengthOnParam
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 28|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 29|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Name of animator boolean to determine if the line is out or not.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: heldParam
+    - Name: $v
+      Entry: 7
+      Data: 30|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 31|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 15
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemString
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: heldParam
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: heldParam
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 32|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 33|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Name of animator boolean for displaying if the player is unreeling or
+        not.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: endPoint
+    - Name: $v
+      Entry: 7
+      Data: 34|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 35|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 36|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.GameObject, UnityEngine.CoreModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineGameObject
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: endPoint
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: endPoint
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 37|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 38|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+    - Name: header
+      Entry: 1
+      Data: End Point Effects
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 39|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: End point game object.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: particles
+    - Name: $v
+      Entry: 7
+      Data: 40|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 41|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 42|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.ParticleSystem, UnityEngine.ParticleSystemModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineParticleSystem
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: particles
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: particles
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 43|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 44|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Particle system to play when first tethering.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: particleEmission
+    - Name: $v
+      Entry: 7
+      Data: 45|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 46|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 47|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Int32, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemInt32
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: particleEmission
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: particleEmission
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 48|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 49|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Number of particles to emit on tether.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: hitSound
+    - Name: $v
+      Entry: 7
+      Data: 50|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 51|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 52|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: UnityEngine.AudioSource, UnityEngine.AudioModule
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineAudioSource
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: hitSound
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: hitSound
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 53|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 54|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+    - Name: header
+      Entry: 1
+      Data: Sound Effects
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 55|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Audio to play on hit.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: heldSound
+    - Name: $v
+      Entry: 7
+      Data: 56|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 57|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 52
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineAudioSource
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: heldSound
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: heldSound
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 58|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 59|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Audio to play on held.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: unwindSound
+    - Name: $v
+      Entry: 7
+      Data: 60|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 61|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 52
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: UnityEngineAudioSource
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: unwindSound
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: unwindSound
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 62|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 63|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Audio to play while unwinding.
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: unwindPitchLow
+    - Name: $v
+      Entry: 7
+      Data: 64|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 65|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 66|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Single, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: unwindPitchLow
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: unwindPitchLow
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 67|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 68|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Pitch for slowest unwind speed
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: unwindPitchHigh
+    - Name: $v
+      Entry: 7
+      Data: 69|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 70|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 66
+    - Name: declarationType
+      Entry: 3
+      Data: 1
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemSingle
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: unwindPitchHigh
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: unwindPitchHigh
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 71|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 72|UnityEngine.TooltipAttribute, UnityEngine.CoreModule
+    - Name: tooltip
+      Entry: 1
+      Data: Pitch for fastest unwind speed
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: tetheringDown
+    - Name: $v
+      Entry: 7
+      Data: 73|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 74|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 7
+      Data: 75|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: System.Boolean, mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemBoolean
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: tetheringDown
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: tetheringDown
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 76|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: heldDown
+    - Name: $v
+      Entry: 7
+      Data: 77|UdonSharp.FieldDefinition, UdonSharp.Editor
+    - Name: fieldSymbol
+      Entry: 7
+      Data: 78|UdonSharp.SymbolDefinition, UdonSharp.Editor
+    - Name: internalType
+      Entry: 9
+      Data: 75
+    - Name: declarationType
+      Entry: 3
+      Data: 2
+    - Name: syncMode
+      Entry: 3
+      Data: 0
+    - Name: symbolResolvedTypeName
+      Entry: 1
+      Data: SystemBoolean
+    - Name: symbolOriginalName
+      Entry: 1
+      Data: heldDown
+    - Name: symbolUniqueName
+      Entry: 1
+      Data: heldDown
+    - Name: symbolDefaultValue
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: fieldAttributes
+      Entry: 7
+      Data: 79|System.Collections.Generic.List`1[[System.Attribute, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: userBehaviourSource
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
