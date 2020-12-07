@@ -17,3 +17,6 @@ Get it in the [releases](https://github.com/squiddingme/UdonTether/releases).
 7.	If you don't plan on modifying the scripts at all, this and some configuration of the TetherProperties scripts on the root objects of these two prefabs is enough to have a functional grappling world.
 
 More instructions can be found in readme.pdf in release packages.
+
+## License
+This work is licensed under the terms of the MIT license.
